@@ -4,7 +4,7 @@
     "titolo": "Manoscritto B104",
     "tipo": "manoscritto",
     "descrizione": "Descrive opere conservate nelle collezioni nobiliari bolognesi, con note autografe di Oretti.",
-    "link": "browse.html#b104",
+    "link": "item-b104",
     "immagine": "images/b104.jpg"
   },
   {
@@ -12,7 +12,7 @@
     "titolo": "Manoscritto B109",
     "tipo": "manoscritto",
     "descrizione": "Descrive opere conservate nelle collezioni cittadine bolognesi, con note autografe di Oretti.",
-    "link": "browse.html#b109",
+    "link": "item-b109",
     "immagine": "images/b109.jpg"
   },
     {
@@ -20,7 +20,7 @@
     "titolo": "Manoscritto B110",
     "tipo": "manoscritto",
     "descrizione": "Descrive opere conservate nelle collezioni cittadine bolognesi, con note autografe di Oretti.",
-    "link": "browse.html#b110",
+    "link": "item-b110",
     "immagine": "images/b110.jpg"
   },
   {
@@ -28,7 +28,7 @@
     "titolo": "Famiglia Pepoli",
     "tipo": "collezionisti",
     "descrizione": "Storica famiglia aristocratica bolognese, proprietaria di una vasta collezione d’arte nel XVIII secolo.",
-    "link": "catalog.html#pepoli",
+    "link": "item-pepoli",
     "immagine": "images/pepoli.jpg"
   },
   {
@@ -36,15 +36,15 @@
     "titolo": "Famiglia Zambeccari",
     "tipo": "collezionisti",
     "descrizione": "Storica famiglia senatoria bolognese, proprietaria di una vasta collezione d’arte nel XVIII secolo.",
-    "link": "catalog.html#zambeccari",
-    "immagine": "images/default.jpg"
+    "link": "item-zambeccari",
+    "immagine": "images/zambeccari.jpg"
   },
   {
     "id": "guercino",
     "titolo": "Guercino",
     "tipo": "autori",
     "descrizione": "Giovanni Francesco Barbieri, detto il Guercino, autore di opere presenti in molte collezioni bolognesi.",
-    "link": "autori.html#guercino",
+    "link": "item-guercino",
     "immagine": "images/guercino.jpg"
   },
   {
@@ -52,15 +52,7 @@
     "titolo": "Madonna con Bambino",
     "tipo": "opere",
     "descrizione": "Opera attribuita a Guido Reni, conservata nella collezione Pepoli.",
-    "link": "browse.html#madonna",
-    "immagine": "images/default.jpg"
+    "link": "item-opera-001",
+    "immagine": "images/opera-001.jpg"
   },
-  {
-    "id": "archiginnasio",
-    "titolo": "Biblioteca dell’Archiginnasio",
-    "tipo": "luogo",
-    "descrizione": "Luogo di conservazione dei manoscritti di Oretti.",
-    "link": "map.html#archiginnasio",
-    "immagine": "images/default.jpg"
-  }
 ]
