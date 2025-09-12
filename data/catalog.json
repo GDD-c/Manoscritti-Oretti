@@ -55,6 +55,14 @@
     "link": "item-carracci",
     "immagine": "images/carracci.jpg"
   },
+      {
+    "id": "cignani",
+    "titolo": "Carlo Cignani",
+    "tipo": "autori",
+    "descrizione": "Carlo Cignani, autore di opere presenti in molte collezioni bolognesi.",
+    "link": "item-cignani",
+    "immagine": "images/cignani.jpg"
+  },
   {
     "id": "madonna",
     "titolo": "Madonna con Bambino",
