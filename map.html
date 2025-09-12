@@ -10,10 +10,10 @@
 <!-- Leaflet CSS -->
 <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet"/>
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&amp;family=Playfair+Display:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&amp;family=Playfair+Display:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <!-- CSS personalizzati -->
-<link href="css/style-base.css" rel="stylesheet">
-<link href="css/map.css" rel="stylesheet"/>
+<link href="css/style-base.css" rel="stylesheet"/>
+<link href="css/map.css" rel="stylesheet">
 <style>
     body {
       background-color: #f8f1e4;
@@ -48,7 +48,7 @@
       background-color: #e2d8c3;
     }
   </style>
-</link><link href="css/style-breadcrumb.css" rel="stylesheet"/></head>
+</link></link><link href="css/style-breadcrumb.css" rel="stylesheet"/></head>
 <body>
 <header class="py-4 bg-white border-bottom"><div class="container"><nav class="breadcrumb mb-3"><a href="index.html">Home</a> › Mappa</nav><h1 class="display-6">Mappa</h1></div></header><nav class="navbar navbar-expand-lg navbar-light border-bottom">
 <div class="container">
@@ -68,21 +68,15 @@
 </div>
 </div>
 </nav>
-<header class="py-4 bg-white border-bottom"><div class="container"><h1 class="display-6">Mappa</h1></div></header>
 <!-- Navbar -->
 <!-- Header -->
-<header class="text-center py-4 bg-white border-bottom">
-<div class="container">
-<h1 class="h3 mb-2">Mappa delle Collezioni</h1>
-<p class="mb-0">Luoghi citati nei manoscritti di Marcello Oretti</p>
-</div>
-</header>
+
 <!-- Mappa -->
 <div class="container">
 <div id="map"></div>
 </div>
 <!-- Footer -->
-<section class="py-4"><div class="container"><div id="oretti-map" style="height:500px;"></div></div></section><footer class="py-4 text-center border-top">
+<footer class="py-4 text-center border-top">
 <div class="container">
 <p class="mb-0 small">© 2025 - Collezioni d’Arte a Bologna nel XVIII secolo</p>
 </div>
@@ -91,27 +85,5 @@
 <script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script defer="" src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script defer="" src="js/map.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', async () => {
-  const map = L.map('oretti-map').setView([44.4949, 11.3426], 13);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
-
-  try {
-    const res = await fetch('data/luoghi.geojson', {cache:'no-store'});
-    const gj = await res.json();
-    const layer = L.geoJSON(gj, {
-      onEachFeature: (feature, layer) => {
-        const p = feature.properties || {};
-        layer.bindPopup(`<strong>${p.name||'Luogo'}</strong><br>${p.descr||''}`);
-      }
-    }).addTo(map);
-    if (layer.getLayers().length) map.fitBounds(layer.getBounds(), {padding:[20,20]});
-  } catch(e) {
-    console.error('Errore nel caricamento della mappa', e);
-  }
-});
-</script></body>
+</body>
 </html>
