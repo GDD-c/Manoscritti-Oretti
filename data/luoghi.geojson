@@ -4,43 +4,34 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bologna (centro)",
-        "descr": "Luogo generale delle collezioni"
+        "name": "Palazzo Zambeccari",
+        "descr": "Bologna, Via Barberia / Via De’Carbonesi"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          11.3426,
-          44.4949
-        ]
+        "coordinates": [11.34528, 44.49111]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Palazzo Pepoli (indicativo)",
-        "descr": "Sede museale storica"
+        "name": "Casa del Guercino",
+        "descr": "Bologna, Via del Pratello"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          11.3458,
-          44.4983
-        ]
+        "coordinates": [11.33148, 44.49506]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "San Michele in Bosco",
-        "descr": "Luogo storico citato in fonti"
+        "name": "Accademia degli Incamminati dei Carracci",
+        "descr": "Bologna, Via de’ Falegnami (zona storica, punto approssimativo)"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          11.3547,
-          44.4798
-        ]
+        "coordinates": [11.343, 44.495]
       }
     }
   ]
