@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bologna (centro)",
+        "descr": "Luogo generale delle collezioni"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3426,
+          44.4949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Palazzo Pepoli (indicativo)",
+        "descr": "Sede museale storica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3458,
+          44.4983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Michele in Bosco",
+        "descr": "Luogo storico citato in fonti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3547,
+          44.4798
+        ]
+      }
+    }
+  ]
+}
