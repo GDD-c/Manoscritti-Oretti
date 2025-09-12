@@ -31,6 +31,8 @@
 
   .navbar {
     background-color: #e2d8c3;
+    position: relative;   /* sopra il hero overlay */
+    z-index: 1100;        /* evita che l'overlay catturi i click */
   }
 
   .btn-outline-light:hover {
@@ -39,7 +41,7 @@
     border-color: #fff;
   }
 
-  /* 🔧 Correzione qui: percorso relativo corretto */
+  /* Hero con immagine del repo */
   .hero-banner-ampio {
     background: url('images/banner-oretti.jpg') center/cover no-repeat;
     min-height: 65vh;
@@ -51,7 +53,8 @@
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.45);
-    z-index: 0;
+    z-index: 0;            /* sotto il contenuto e sotto la navbar */
+    pointer-events: none;  /* non intercetta i click */
   }
 
   .hero-banner-ampio .container {
@@ -69,19 +72,19 @@
 
 <nav class="navbar navbar-expand-lg navbar-light border-bottom">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Oretti Manoscritti</a>
-    <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+    <a class="navbar-brand fw-bold" href="/Manoscritti-Oretti/index.html">Oretti Manoscritti</a>
+    <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button" aria-label="Apri menu">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
- <ul class="navbar-nav ms-auto">
-  <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/index.html">Home</a></li>
-  <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/catalog.html">Catalogo</a></li>
-  <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/autori.html">Autori</a></li>
-  <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/item-manoscritti.html">Manoscritti</a></li>
-  <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/map.html">Mappa</a></li>
-  <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/browse.html">Ricerca</a></li>
-</ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/catalog.html">Catalogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/autori.html">Autori</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/item-manoscritti.html">Manoscritti</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/map.html">Mappa</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Manoscritti-Oretti/browse.html">Ricerca</a></li>
+      </ul>
     </div>
   </div>
 </nav>
@@ -91,7 +94,7 @@
   <div class="container py-5">
     <h1 class="display-4 fw-semibold">Collezioni d’arte a Bologna nel XVIII secolo</h1>
     <p class="lead mt-3">Notizie sul collezionismo bolognese nei manoscritti di Marcello Oretti</p>
-    <a class="btn btn-outline-light mt-4 px-4 py-2" href="catalog.html">Esplora il catalogo</a>
+    <a class="btn btn-outline-light mt-4 px-4 py-2" href="/Manoscritti-Oretti/catalog.html">Esplora il catalogo</a>
   </div>
 </section>
 
