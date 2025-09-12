@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Manoscritto B110</title>
+        <author>Marcello Oretti</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Biblioteca Comunale dell’Archiginnasio</publisher>
+        <pubPlace>Bologna</pubPlace>
+        <date>1749</date>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Biblioteca Comunale dell’Archiginnasio</repository>
+            <idno>B110</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Manoscritto, 112 carte, con annotazioni marginali e illustrazioni a penna.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="section" xml:id="analisi">
+        <head>Analisi delle Collezioni</head>
+        <p>Oretti analizza criticamente l’attribuzione di diverse opere, soffermandosi sulla scuola bolognese del Seicento e Settencento.</p>
+      </div>
+
+      <div type="entry" xml:id="albani">
+        <head>Dipinti di Francesco Albani</head>
+        <p>Numerose opere di Albani sono documentate in collezioni private e religiose, tra cui una "Venere e Adone" nel convento dei Servi.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
