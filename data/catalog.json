@@ -47,6 +47,14 @@
     "link": "item-guercino",
     "immagine": "images/guercino.jpg"
   },
+    {
+    "id": "carracci",
+    "titolo": "Annibale Carracci",
+    "tipo": "autori",
+    "descrizione": "Annibale Carracci, autore di opere presenti in molte collezioni bolognesi.",
+    "link": "item-carracci",
+    "immagine": "images/carracci.jpg"
+  },
   {
     "id": "madonna",
     "titolo": "Madonna con Bambino",
