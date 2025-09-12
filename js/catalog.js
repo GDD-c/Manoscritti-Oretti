@@ -10,27 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const DEFAULT_IMG = "images/default.jpg";
 
   let items = [];
-  let view = (grid?.dataset?.view) || "grid";
+  let view = "grid";
 
-  // Caricamento con fallback per GitHub Pages
   async function loadCatalog() {
-    const candidates = [
-      "data/catalog.json",
-      "/Manoscritti-Oretti/data/catalog.json" // fallback assoluto per project pages
-    ];
-    for (const url of candidates) {
-      try {
-        const res = await fetch(url, { cache: "no-store" });
-        if (res.ok) return await res.json();
-      } catch (_) { /* tenta prossimo */ }
-    }
-    throw new Error("catalog.json non trovato");
+    const res = await fetch("data/catalog.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("Errore nel caricamento di catalog.json");
+    return await res.json();
   }
 
-  function normalize(s) { return (s || "").toString().toLowerCase(); }
+  function normalize(str) {
+    return (str || "").toString().toLowerCase();
+  }
 
   function render(list) {
-    if (!grid) return;
     grid.innerHTML = "";
 
     if (!list || list.length === 0) {
@@ -75,15 +67,15 @@ document.addEventListener("DOMContentLoaded", () => {
   function applyFilters() {
     let list = [...items];
 
-    // ricerca per titolo o id
+    // ricerca
     const q = normalize(search?.value);
-    if (q) list = list.filter(i => normalize(i.titolo).includes(q) || normalize(i.id).includes(q));
+    if (q) list = list.filter(i => normalize(i.titolo).includes(q));
 
-    // filtro per tipologia (valori nel JSON: manoscritto, autori, collezionisti, opere, luogo)
+    // filtro per tipologia
     const t = filter?.value;
     if (t) list = list.filter(i => normalize(i.tipo) === normalize(t));
 
-    // ordinamento per titolo
+    // ordinamento
     if (sort?.value === "title-asc") {
       list.sort((a, b) => a.titolo.localeCompare(b.titolo));
     } else if (sort?.value === "title-desc") {
@@ -93,33 +85,35 @@ document.addEventListener("DOMContentLoaded", () => {
     render(list);
   }
 
-  // Event listeners
-  if (btnGrid) btnGrid.addEventListener("click", () => {
+  // toggle griglia/lista
+  btnGrid?.addEventListener("click", () => {
     view = "grid";
-    grid.dataset.view = "grid";
     btnGrid.classList.add("active");
-    btnList?.classList.remove("active");
+    btnList.classList.remove("active");
     applyFilters();
   });
 
-  if (btnList) btnList.addEventListener("click", () => {
+  btnList?.addEventListener("click", () => {
     view = "list";
-    grid.dataset.view = "list";
     btnList.classList.add("active");
-    btnGrid?.classList.remove("active");
+    btnGrid.classList.remove("active");
     applyFilters();
   });
 
+  // eventi ricerca/filtro/ordinamento
   search?.addEventListener("input", applyFilters);
   filter?.addEventListener("change", applyFilters);
   sort?.addEventListener("change", applyFilters);
 
-  // Boot
+  // avvio
   loadCatalog()
-    .then(json => { items = json; applyFilters(); })
+    .then(json => {
+      items = json;
+      applyFilters();
+    })
     .catch(err => {
       console.error(err);
-      if (grid) grid.innerHTML = `<p class="text-danger">Impossibile caricare il catalogo.</p>`;
-      if (resultCount) resultCount.textContent = "Errore di caricamento";
+      grid.innerHTML = `<p class="text-danger">Errore nel caricamento del catalogo.</p>`;
+      resultCount.textContent = "Errore di caricamento";
     });
 });
