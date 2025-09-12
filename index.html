@@ -5,67 +5,34 @@
 <title>Marcello Oretti – Collezioni d’Arte a Bologna</title>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Catalogo digitale dei manoscritti di Marcello Oretti: opere, autori, collezionisti e luoghi dell’arte a Bologna nel XVIII secolo." name="description"/>
-<!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&amp;family=Playfair+Display:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- CSS Personalizzato -->
 <link href="css/style-index.css" rel="stylesheet"/>
 <style>
-  body {
-    background-color: #f8f1e4;
-    color: #222;
-    font-family: 'Georgia', serif;
-  }
-
-  h1, h2, h3, .navbar-brand {
-    font-family: 'Playfair Display', serif;
-    color: #3e2d18;
-  }
-
-  p, .lead {
-    font-family: 'Crimson Text', serif;
-    color: #5c3d1e;
-  }
+  body { background-color:#f8f1e4; color:#222; font-family:'Georgia',serif; }
+  h1, h2, h3, .navbar-brand { font-family:'Playfair Display',serif; color:#3e2d18; }
+  p, .lead { font-family:'Crimson Text',serif; color:#5c3d1e; }
 
   .navbar {
-    background-color: #e2d8c3;
-    position: relative;   /* sopra il hero overlay */
-    z-index: 1100;        /* evita che l'overlay catturi i click */
+    background-color:#e2d8c3;
+    position:relative;   /* sopra overlay */
+    z-index:1100;
   }
 
-  .btn-outline-light:hover {
-    background-color: #fff;
-    color: #3e2d18;
-    border-color: #fff;
-  }
+  .btn-outline-light:hover { background-color:#fff; color:#3e2d18; border-color:#fff; }
 
-  /* Hero con immagine del repo */
   .hero-banner-ampio {
-    background: url('images/banner-oretti.jpg') center/cover no-repeat;
-    min-height: 65vh;
-    position: relative;
-    color: white;
+    background:url('images/banner-oretti.jpg') center/cover no-repeat;
+    min-height:65vh; position:relative; color:#fff;
   }
+  .hero-banner-ampio .hero-overlay{
+    position:absolute; inset:0; background:rgba(0,0,0,.45);
+    z-index:0; pointer-events:none; /* <— non cattura i click */
+  }
+  .hero-banner-ampio .container{ position:relative; z-index:1; }
 
-  .hero-banner-ampio .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 0;            /* sotto il contenuto e sotto la navbar */
-    pointer-events: none;  /* non intercetta i click */
-  }
-
-  .hero-banner-ampio .container {
-    position: relative;
-    z-index: 1;
-  }
-
-  footer {
-    background-color: #f2f0eb;
-    color: #333;
-  }
+  footer { background-color:#f2f0eb; color:#333; }
 </style>
 <link href="css/style-breadcrumb.css" rel="stylesheet"/></head>
 <body id="top">
@@ -102,20 +69,26 @@
   <div class="container">
     <div class="row gy-4 text-center">
       <div class="col-sm-6 col-lg-4">
-        <div class="p-4 border rounded bg-white h-100 shadow-sm">
-          <h2 class="h5 mb-1"><a class="stretched-link text-dark text-decoration-none" href="tutte-le-opere-b109.html">Opere d’arte</a></h2>
+        <div class="p-4 border rounded bg-white h-100 shadow-sm position-relative">
+          <h2 class="h5 mb-1">
+            <a class="stretched-link text-dark text-decoration-none" href="tutte-le-opere-b109.html">Opere d’arte</a>
+          </h2>
           <p class="small mb-0">Tutte le opere descritte nei manoscritti.</p>
         </div>
       </div>
       <div class="col-sm-6 col-lg-4">
-        <div class="p-4 border rounded bg-white h-100 shadow-sm">
-          <h2 class="h5 mb-1"><a class="stretched-link text-dark text-decoration-none" href="autori.html">Autori</a></h2>
+        <div class="p-4 border rounded bg-white h-100 shadow-sm position-relative">
+          <h2 class="h5 mb-1">
+            <a class="stretched-link text-dark text-decoration-none" href="autori.html">Autori</a>
+          </h2>
           <p class="small mb-0">Artisti citati nei manoscritti.</p>
         </div>
       </div>
       <div class="col-sm-6 col-lg-4">
-        <div class="p-4 border rounded bg-white h-100 shadow-sm">
-          <h2 class="h5 mb-1"><a class="stretched-link text-dark text-decoration-none" href="collezionisti.html">Collezionisti</a></h2>
+        <div class="p-4 border rounded bg-white h-100 shadow-sm position-relative">
+          <h2 class="h5 mb-1">
+            <a class="stretched-link text-dark text-decoration-none" href="collezionisti.html">Collezionisti</a>
+          </h2>
           <p class="small mb-0">Indice dei collezionisti.</p>
         </div>
       </div>
@@ -123,14 +96,18 @@
 
     <div class="row gy-4 text-center justify-content-center mt-4">
       <div class="col-md-6 col-lg-5">
-        <div class="p-4 border rounded bg-white h-100 shadow-sm">
-          <h2 class="h5 mb-1"><a class="stretched-link text-dark text-decoration-none" href="map.html">Mappa</a></h2>
+        <div class="p-4 border rounded bg-white h-100 shadow-sm position-relative">
+          <h2 class="h5 mb-1">
+            <a class="stretched-link text-dark text-decoration-none" href="map.html">Mappa</a>
+          </h2>
           <p class="small mb-0">Luoghi delle collezioni nella Bologna del XVIII secolo.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-5">
-        <div class="p-4 border rounded bg-white h-100 shadow-sm">
-          <h2 class="h5 mb-1"><a class="stretched-link text-dark text-decoration-none" href="item-manoscritti.html">Manoscritti</a></h2>
+        <div class="p-4 border rounded bg-white h-100 shadow-sm position-relative">
+          <h2 class="h5 mb-1">
+            <a class="stretched-link text-dark text-decoration-none" href="item-manoscritti.html">Manoscritti</a>
+          </h2>
           <p class="small mb-0">I manoscritti di Marcello Oretti.</p>
         </div>
       </div>
