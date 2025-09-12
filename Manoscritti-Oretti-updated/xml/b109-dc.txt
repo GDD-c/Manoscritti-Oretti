@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcterms="http://purl.org/dc/terms/">
+
+  <dc:title>Manoscritto B109</dc:title>
+  <dc:creator>Marcello Oretti</dc:creator>
+  <dc:subject>Inventario di opere d’arte a Bologna, XVIII secolo</dc:subject>
+  <dc:description>Documento manoscritto con registrazioni sistematiche di opere artistiche conservate in edifici pubblici e privati a Bologna.</dc:description>
+  <dc:publisher>Biblioteca Comunale dell’Archiginnasio</dc:publisher>
+  <dc:contributor>Progetto Digital Humanities, Università di Bologna</dc:contributor>
+  <dc:date>1747</dc:date>
+  <dc:type>Manoscritto</dc:type>
+  <dc:format>application/pdf</dc:format>
+  <dc:identifier>archiginnasio-b109</dc:identifier>
+  <dc:language>it</dc:language>
+  <dc:coverage>Bologna, Italia</dc:coverage>
+  <dc:rights>Licenza CC BY-NC-SA 4.0</dc:rights>
+
+</metadata>

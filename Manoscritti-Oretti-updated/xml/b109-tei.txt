@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Manoscritto B109</title>
+        <author>Marcello Oretti</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Biblioteca Comunale dell’Archiginnasio</publisher>
+        <pubPlace>Bologna</pubPlace>
+        <date>1747</date>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Biblioteca Comunale dell’Archiginnasio</repository>
+            <idno>B109</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Manoscritto cartaceo, 135 carte, scrittura corsiva italiana, formato in-quarto.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="section" xml:id="inventario">
+        <head>Inventario delle Opere</head>
+        <p>Il manoscritto presenta una catalogazione dettagliata di opere presenti in varie istituzioni bolognesi, come chiese, palazzi, biblioteche e accademie.</p>
+      </div>
+
+      <div type="entry" xml:id="reni">
+        <head>Opere di Guido Reni</head>
+        <p>In Santa Maria della Vita si trova una pala d’altare raffigurante l’Assunzione della Vergine, attribuita a Guido Reni.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,138 @@
+
+/* Tipografia base */
+body {
+  font-family: 'Georgia', serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  background-color: #f8f8f8;
+  color: #2b2b2b;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Times New Roman', serif;
+  color: #d6d2ce;
+  font-weight: normal;
+}
+
+a {
+  color: #5c3d1e;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hero banner */
+.hero-banner {
+  background-color: #f2f0eb;
+  padding: 6rem 1rem;
+}
+.hero-banner h1 {
+  font-size: 2.5rem;
+}
+.hero-banner p {
+  font-size: 1.25rem;
+  color: white;
+}
+.hero-banner-ampio h1,
+.hero-banner-ampio p {
+  color: white !important;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* Box categoria con immagine di sfondo */
+.category-box{
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.category-box::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.45);
+}
+.category-box > div{
+  position: relative;
+  z-index: 1;
+}
+
+/* Sfondi per categoria */
+.cat-opere        { background-image: url('../images/bg-opere.jpg'); }
+.cat-autori       { background-image: url('../images/bg-autori.jpg'); }
+.cat-collezionisti{ background-image: url('../images/bg-collezionisti.jpg'); }
+.cat-mappa        { background-image: url('../images/bg-mappa.jpg'); }
+.cat-manoscritti  { background-image: url('../images/bg-manoscritti.jpeg'); }
+
+/* Hover leggero sui box */
+.category-box:hover{
+  transform: translateY(-3px);
+  transition: .25s ease;
+}
+
+/* Navigazione visiva - blocchi (card con bordo) */
+section .container .row > div {
+  transition: all 0.3s ease;
+}
+section .container .row > div:hover {
+  transform: translateY(-5px);
+}
+section .container .row > div .border {
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  padding: 2rem;
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+section .container .row > div .border h5 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: #3e2d18;
+}
+section .container .row > div .border p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Sezione progetto */
+section.border-top {
+  border-top: 1px solid #ccc;
+  background-color: #ffffff;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .hero-banner { padding: 4rem 1rem; }
+  .hero-banner h1 { font-size: 2rem; }
+  .hero-banner p { font-size: 1.1rem; }
+  .category-box { height: 160px; }
+}
+
+/* Scroll fluido */
+html { scroll-behavior: smooth; }

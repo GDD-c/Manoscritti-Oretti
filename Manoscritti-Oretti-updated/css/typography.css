@@ -1,0 +1,53 @@
+/* Tipografia elegante uniforme – Collezioni Oretti */
+
+/* scala dimensionale fluida */
+:root{
+  --fs-body: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);
+  --fs-h1: clamp(2rem, 1.4rem + 2.2vw, 3rem);
+  --fs-h2: clamp(1.5rem, 1.1rem + 1.4vw, 2.2rem);
+  --fs-h3: clamp(1.3rem, 1.05rem + 0.9vw, 1.6rem);
+  --lh-body: 1.7;
+  --lh-heading: 1.2;
+}
+
+/* testo base */
+html { scroll-behavior: smooth; }
+body{
+  font-family: "Crimson Text", Georgia, "Times New Roman", serif;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: #2b2b2b;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* titoli */
+h1, h2, h3, h4, .display-1, .display-2, .display-3, .display-4{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  line-height: var(--lh-heading);
+  letter-spacing: 0.2px;
+  color: #3e2d18;
+  margin-bottom: .5rem;
+}
+h1,.display-4{ font-size: var(--fs-h1); }
+h2{ font-size: var(--fs-h2); }
+h3{ font-size: var(--fs-h3); }
+
+/* elementi ricorrenti */
+.lead{ font-size: 1.125em; color:#5c3d1e; }
+.navbar-brand, .nav-link{ font-family: "Crimson Text", serif; }
+.btn{
+  font-family: "Crimson Text", serif;
+  letter-spacing: .2px;
+}
+
+/* micro-tipi utili */
+.smallcaps{ font-variant-caps: small-caps; }
+.figure-numerals{ font-variant-numeric: oldstyle-nums; }
+blockquote{
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+  border-left: 4px solid #cbb279;
+  padding-left: 1rem;
+  color:#4a4031;
+}
