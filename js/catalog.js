@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultCount = document.getElementById("resultCount");
   const btnGrid = document.getElementById("btnGrid");
   const btnList = document.getElementById("btnList");
+
   const DEFAULT_IMG = "images/default.jpg";
 
   let items = [];
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resultCount.textContent = `${list.length} risultato${list.length === 1 ? "" : "i"}`;
 
     const isGrid = view === "grid";
+
     list.forEach(item => {
       const col = document.createElement("div");
       col.className = isGrid ? "col-12 col-sm-6 col-md-4 col-lg-3" : "col-12";
@@ -43,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       col.innerHTML = isGrid
         ? `
         <div class="card h-100 shadow-sm">
-          <img src="${img}" class="card-img-top" alt="${item.titolo}" style="height:200px;object-fit:cover" onerror="this.src='${DEFAULT_IMG}'">
+          <img src="${img}" class="card-img-top" alt="${item.titolo}" onerror="this.src='${DEFAULT_IMG}'">
           <div class="card-body">
             <div class="small text-uppercase text-muted mb-1">${item.tipo || ""}</div>
             <h5 class="card-title">${item.titolo}</h5>
