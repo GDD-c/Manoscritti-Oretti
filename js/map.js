@@ -1,27 +1,33 @@
+// js/map.js
 document.addEventListener('DOMContentLoaded', function () {
+  // Inizializza la mappa centrata su Bologna
   const map = L.map('map').setView([44.4949, 11.3426], 13);
 
+  // Aggiunge le tile OpenStreetMap
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors',
-    maxZoom: 18,
+    maxZoom: 18
   }).addTo(map);
 
-  const luoghi = [
-    {
-      nome: "Palazzo Pepoli",
-      descrizione: "Collezione Pepoli menzionata nel manoscritto B104.",
-      coords: [44.4956, 11.3432]
-    },
-    {
-      nome: "Biblioteca Archiginnasio",
-      descrizione: "Luogo di conservazione dei manoscritti di Oretti.",
-      coords: [44.4928, 11.3437]
-    }
-  ];
+  // Carica i luoghi da GeoJSON
+  fetch('data/luoghi.geojson')
+    .then(res => res.json())
+    .then(data => {
+      const geojsonLayer = L.geoJSON(data, {
+        onEachFeature: (feature, layer) => {
+          const props = feature.properties;
+          const popupContent = `
+            <strong>${props.name}</strong><br>
+            ${props.descr}
+          `;
+          layer.bindPopup(popupContent);
+        }
+      }).addTo(map);
 
-  luoghi.forEach(luogo => {
-    L.marker(luogo.coords)
-      .addTo(map)
-      .bindPopup(`<strong>${luogo.nome}</strong><br>${luogo.descrizione}`);
-  });
+      // Zoom automatico per vedere tutti i punti
+      map.fitBounds(geojsonLayer.getBounds());
+    })
+    .catch(err => {
+      console.error("Errore nel caricamento di luoghi.geojson:", err);
+    });
 });
