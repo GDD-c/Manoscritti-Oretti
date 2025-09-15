@@ -1,17 +1,17 @@
 [
   {
     "id": "b104",
-    "titolo": "Manoscritto B104",
+    "titolo": "Manoscritto B.104",
     "tipo": "manoscritto",
-    "descrizione": "Descrive opere conservate nelle collezioni nobiliari bolognesi, con note autografe di Oretti.",
+    "descrizione": "Descrive opere conservate nelle collezioni nobiliari a Bologna, con note autografe di Marcello Oretti.",
     "link": "item-b104",
     "immagine": "images/b104.jpg"
   },
   {
     "id": "b109",
-    "titolo": "Manoscritto B109",
+    "titolo": "Manoscritto B.109",
     "tipo": "manoscritto",
-    "descrizione": "Descrive opere conservate nelle collezioni cittadine bolognesi, con note autografe di Oretti.",
+    "descrizione": "Descrive opere conservate nelle collezioni cittadine a Bologna, con note autografe di Marcello Oretti.",
     "link": "item-b109",
     "immagine": "images/b109.jpg"
   },
@@ -19,7 +19,7 @@
     "id": "b110",
     "titolo": "Manoscritto B110",
     "tipo": "manoscritto",
-    "descrizione": "Descrive opere conservate nelle collezioni cittadine bolognesi, con note autografe di Oretti.",
+    "descrizione": "Descrive opere conservate nelle collezioni nobiliari nel contado bolognese, con note autografe di Oretti.",
     "link": "item-b110",
     "immagine": "images/b110.jpg"
   },
@@ -43,7 +43,7 @@
     "id": "guercino",
     "titolo": "Guercino",
     "tipo": "autori",
-    "descrizione": "Giovanni Francesco Barbieri, detto il Guercino,Cento, 2 febbraio 1591 – Bologna, 22 dicembre 1666.",
+    "descrizione": "Giovanni Francesco Barbieri, detto il Guercino (Cento, 2 febbraio 1591 – Bologna, 22 dicembre 1666)",
     "link": "item-guercino",
     "immagine": "images/guercino.jpg"
   },
@@ -51,7 +51,7 @@
     "id": "carracci",
     "titolo": "Annibale Carracci",
     "tipo": "autori",
-    "descrizione": "Annibale Carracci, Bologna, 3 novembre 1560 – Roma, 15 luglio 1609.",
+    "descrizione": "Annibale Carracci (Bologna, 3 novembre 1560 – Roma, 15 luglio 1609)",
     "link": "item-carracci",
     "immagine": "images/carracci.jpg"
   },
@@ -59,7 +59,7 @@
     "id": "cignani",
     "titolo": "Carlo Cignani",
     "tipo": "autori",
-    "descrizione": "Carlo Cignani, Bologna, 15 maggio 1628 – Forlì, 6 settembre 1719.",
+    "descrizione": "Carlo Cignani (Bologna, 15 maggio 1628 – Forlì, 6 settembre 1719)",
     "link": "item-cignani",
     "immagine": "images/cignani.jpg"
   },
