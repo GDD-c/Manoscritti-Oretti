@@ -1,52 +1,74 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("browse-container");
+// browse.js
 
-  fetch("data/catalog.json")
-    .then(res => {
-      if (!res.ok) throw new Error("catalog.json non trovato");
-      return res.json();
-    })
-    .then(data => {
-      const grouped = {};
-      data.forEach(item => {
-        grouped[item.tipo] ??= [];
-        grouped[item.tipo].push(item);
-      });
+async function loadCatalog() {
+  const response = await fetch("catalog.json");
+  const data = await response.json();
+  return data.items;
+}
 
-      const ordine = ["manoscritto", "autori", "collezionisti", "opere", "luogo"];
+function renderCatalog(items) {
+  const grid = document.getElementById("catalog-grid");
+  const resultCount = document.getElementById("resultCount");
 
-      ordine.forEach(tipo => {
-        if (grouped[tipo]) {
-          // Sezione di categoria
-          const header = document.createElement("div");
-          header.className = "col-12";
-          header.innerHTML = `<h2 class="h5 mb-3 mt-4 text-capitalize">${tipo}s</h2>`;
-          container.appendChild(header);
+  grid.innerHTML = "";
 
-          grouped[tipo].forEach(item => {
-            const col = document.createElement("div");
-            col.className = "col-md-6 col-lg-4";
+  if (items.length === 0) {
+    resultCount.textContent = "Nessun risultato trovato.";
+    return;
+  }
 
-            const imgSrc = item.immagine || "img/default.jpg";
+  resultCount.textContent = `${items.length} risultati trovati`;
 
-            col.innerHTML = `
-              <div class="card h-100 shadow-sm">
-                <img src="${imgSrc}" class="card-img-top" alt="${item.titolo}" style="height:200px; object-fit:cover;">
-                <div class="card-body">
-                  <h5 class="card-title">${item.titolo}</h5>
-                  <p class="card-text small">${item.descrizione}</p>
-                  <a href="${item.link}" class="btn btn-sm btn-outline-primary">Apri scheda</a>
-                </div>
-              </div>
-            `;
+  items.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "col-md-4 col-lg-3";
 
-            container.appendChild(col);
-          });
-        }
-      });
-    })
-    .catch(error => {
-      container.innerHTML = `<p class="text-danger">Errore: ${error.message}</p>`;
-      console.error(error);
-    });
+    card.innerHTML = `
+      <div class="card h-100">
+        <img src="${item.image}" class="card-img-top" alt="${item.title}">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">${item.title}</h5>
+          <p class="card-text small">${item.descr}</p>
+          <a href="${item.link}" class="btn btn-outline-secondary mt-auto">Vai alla scheda</a>
+        </div>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+}
+
+function filterAndSort(items) {
+  const searchValue = document.getElementById("search").value.toLowerCase();
+  const filterValue = document.getElementById("filter").value;
+  const sortValue = document.getElementById("sort").value;
+
+  let filtered = items.filter(item => {
+    const matchSearch = item.title.toLowerCase().includes(searchValue);
+    const matchFilter = filterValue ? item.type === filterValue : true;
+    return matchSearch && matchFilter;
+  });
+
+  if (sortValue === "title-asc") {
+    filtered.sort((a, b) => a.title.localeCompare(b.title));
+  } else if (sortValue === "title-desc") {
+    filtered.sort((a, b) => b.title.localeCompare(a.title));
+  }
+
+  return filtered;
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const items = await loadCatalog();
+
+  function update() {
+    const results = filterAndSort(items);
+    renderCatalog(results);
+  }
+
+  document.getElementById("search").addEventListener("input", update);
+  document.getElementById("filter").addEventListener("change", update);
+  document.getElementById("sort").addEventListener("change", update);
+
+  update(); // render iniziale
 });
