@@ -128,7 +128,7 @@
       "title": "Biblioteca dell'Archiginnasio",
       "type": "luogo",
       "link": "map.html",
-      "image": "images/bologna.jpg",
+      "image": "images/bg-manoscritti.jpg",
       "descr": "Luogo di conservazione dei manoscritti"
     },
     {
@@ -152,7 +152,7 @@
       "title": "San Michele in Bosco",
       "type": "luogo",
       "link": "map.html",
-      "image": "images/sanmichele.jpg",
+      "image": "images/bg-mappa.jpg",
       "descr": "Monastero e luogo storico"
     },
     {
