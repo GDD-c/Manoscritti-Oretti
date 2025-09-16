@@ -146,6 +146,30 @@
       "link": "map.html",
       "image": "images/zambeccari.jpg",
       "descr": "Residenza e collezione Zambeccari"
+    },
+    {
+      "id": "luogo-michele",
+      "title": "San Michele in Bosco",
+      "type": "luogo",
+      "link": "map.html",
+      "image": "images/sanmichele.jpg",
+      "descr": "Monastero e luogo storico"
+    },
+    {
+      "id": "luogo-guercino",
+      "title": "Casa del Guercino",
+      "type": "luogo",
+      "link": "map.html",
+      "image": "images/guercino-casa.jpg",
+      "descr": "Residenza storica del Guercino"
+    },
+    {
+      "id": "luogo-carracci",
+      "title": "Accademia degli Incamminati",
+      "type": "luogo",
+      "link": "map.html",
+      "image": "images/carracci-accademia.jpg",
+      "descr": "Fondata dai Carracci, centro artistico bolognese"
     }
   ]
 }
