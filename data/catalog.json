@@ -160,7 +160,7 @@
       "title": "Casa del Guercino",
       "type": "luogo",
       "link": "map.html",
-      "image": "images/guercino-casa.jpg",
+      "image": "images/bg-mappa.jpg",
       "descr": "Residenza storica del Guercino"
     },
     {
@@ -168,7 +168,7 @@
       "title": "Accademia degli Incamminati",
       "type": "luogo",
       "link": "map.html",
-      "image": "images/carracci-accademia.jpg",
+      "image": "images/bg-mappa.jpg",
       "descr": "Fondata dai Carracci, centro artistico bolognese"
     }
   ]
