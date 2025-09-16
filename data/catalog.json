@@ -24,7 +24,6 @@
       "image": "images/b110.jpg",
       "descr": "Descrizioni delle opere nelle ville e palazzi suburbani"
     },
-
     {
       "id": "albani",
       "title": "Francesco Albani",
@@ -73,7 +72,6 @@
       "image": "images/tibaldi.jpg",
       "descr": "Architetto e pittore manierista"
     },
-
     {
       "id": "opera-albani",
       "title": "Ballo di puttini con Venere",
@@ -122,7 +120,6 @@
       "image": "images/opera-madonna-tibaldi.jpg",
       "descr": "Pellegrino Tibaldi, olio su tela"
     },
-
     {
       "id": "luogo-bologna",
       "title": "Biblioteca dell'Archiginnasio",
