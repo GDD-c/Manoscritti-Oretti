@@ -4,8 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bologna (centro)",
-        "descr": "Luogo generale delle collezioni"
+        "name": "Biblioteca dell'Archiginnasio",
+        "descr": "Luogo di conservazione dei manoscritti"
       },
       "geometry": {
         "type": "Point",
