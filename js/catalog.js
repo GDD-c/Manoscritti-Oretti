@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadCatalog() {
     try {
-      const res = await fetch("catalog.json", { cache: "no-store" });
+     const res = await fetch("data/catalog.json", { cache: "no-store" });
+
       if (res.ok) {
         const data = await res.json();
         return data.items;
