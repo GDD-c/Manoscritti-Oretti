@@ -17,7 +17,7 @@ function renderCatalog(items) {
     return;
   }
 
-  resultCount.textContent = `${items.length} risultati trovati`;
+  resultCount.textContent = `${items.length} risultato${items.length > 1 ? "i" : ""} trovati`;
 
   items.forEach(item => {
     const card = document.createElement("div");
@@ -44,7 +44,11 @@ function filterAndSort(items) {
   const sortValue = document.getElementById("sort").value;
 
   let filtered = items.filter(item => {
-    const matchSearch = item.title.toLowerCase().includes(searchValue);
+    const matchSearch =
+      item.title.toLowerCase().includes(searchValue) ||
+      item.descr.toLowerCase().includes(searchValue) ||
+      item.type.toLowerCase().includes(searchValue);
+
     const matchFilter = filterValue ? item.type === filterValue : true;
     return matchSearch && matchFilter;
   });
