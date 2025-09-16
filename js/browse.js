@@ -1,7 +1,7 @@
 // browse.js
 
 async function loadCatalog() {
-  const response = await fetch("catalog.json");
+  const response = await fetch("data/catalog.json");
   const data = await response.json();
   return data.items;
 }
