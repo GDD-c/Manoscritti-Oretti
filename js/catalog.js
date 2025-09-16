@@ -14,19 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
   let view = "grid";
 
   async function loadCatalog() {
-    // prova a caricare dal percorso relativo
-    let res;
     try {
-      res = await fetch("data/catalog.json", { cache: "no-store" });
-      if (res.ok) return await res.json();
-    } catch (_) { /* tenta fallback */ }
-
-    // fallback per GitHub Pages (sottocartella /Manoscritti-Oretti/)
-    try {
-      const res2 = await fetch("/Manoscritti-Oretti/data/catalog.json", { cache: "no-store" });
-      if (res2.ok) return await res2.json();
-    } catch (_) { /* errore */ }
-
+      const res = await fetch("catalog.json", { cache: "no-store" });
+      if (res.ok) {
+        const data = await res.json();
+        return data.items;
+      }
+    } catch (err) {
+      console.error("Errore fetch catalog.json:", err);
+    }
     throw new Error("Errore nel caricamento di catalog.json");
   }
 
@@ -50,27 +46,27 @@ document.addEventListener("DOMContentLoaded", () => {
       const col = document.createElement("div");
       col.className = isGrid ? "col-12 col-sm-6 col-md-4 col-lg-3" : "col-12";
 
-      const img = item.immagine || DEFAULT_IMG;
-      const descr = item.descrizione ? `<p class="card-text small">${item.descrizione}</p>` : "";
+      const img = item.image || DEFAULT_IMG;
+      const descr = item.descr ? `<p class="card-text small">${item.descr}</p>` : "";
 
       col.innerHTML = isGrid
         ? `
         <div class="card h-100 shadow-sm">
-          <img src="${img}" class="card-img-top" alt="${item.titolo}" onerror="this.src='${DEFAULT_IMG}'">
+          <img src="${img}" class="card-img-top" alt="${item.title}" onerror="this.src='${DEFAULT_IMG}'">
           <div class="card-body">
-            <div class="small text-uppercase text-muted mb-1">${item.tipo || ""}</div>
-            <h5 class="card-title">${item.titolo}</h5>
+            <div class="small text-uppercase text-muted mb-1">${item.type || ""}</div>
+            <h5 class="card-title">${item.title}</h5>
             ${descr}
             <a href="${item.link}" class="btn btn-sm btn-outline-primary">Apri scheda</a>
           </div>
         </div>`
         : `
         <div class="d-flex gap-3 align-items-start border rounded p-3 h-100">
-          <img src="${img}" alt="${item.titolo}" style="width:96px;height:96px;object-fit:cover;border-radius:6px" onerror="this.src='${DEFAULT_IMG}'">
+          <img src="${img}" alt="${item.title}" style="width:96px;height:96px;object-fit:cover;border-radius:6px" onerror="this.src='${DEFAULT_IMG}'">
           <div>
-            <div class="small text-uppercase text-muted">${item.tipo || ""}</div>
-            <h5 class="mb-1"><a href="${item.link}">${item.titolo}</a></h5>
-            ${item.descrizione ? `<p class="mb-0 text-muted small">${item.descrizione}</p>` : ""}
+            <div class="small text-uppercase text-muted">${item.type || ""}</div>
+            <h5 class="mb-1"><a href="${item.link}">${item.title}</a></h5>
+            ${item.descr ? `<p class="mb-0 text-muted small">${item.descr}</p>` : ""}
           </div>
         </div>`;
       grid.appendChild(col);
@@ -80,19 +76,19 @@ document.addEventListener("DOMContentLoaded", () => {
   function applyFilters() {
     let list = [...items];
 
-    // ricerca
     const q = normalize(search?.value);
-    if (q) list = list.filter(i => normalize(i.titolo).includes(q));
+    if (q) list = list.filter(i =>
+      normalize(i.title).includes(q) ||
+      normalize(i.descr).includes(q)
+    );
 
-    // filtro per tipologia
     const t = filter?.value;
-    if (t) list = list.filter(i => normalize(i.tipo) === normalize(t));
+    if (t) list = list.filter(i => normalize(i.type) === normalize(t));
 
-    // ordinamento
     if (sort?.value === "title-asc") {
-      list.sort((a, b) => a.titolo.localeCompare(b.titolo));
+      list.sort((a, b) => a.title.localeCompare(b.title));
     } else if (sort?.value === "title-desc") {
-      list.sort((a, b) => b.titolo.localeCompare(a.titolo));
+      list.sort((a, b) => b.title.localeCompare(a.title));
     }
 
     render(list);
@@ -128,4 +124,5 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(err);
       grid.innerHTML = `<p class="text-danger">Errore nel caricamento del catalogo.</p>`;
       resultCount.textContent = "Errore di caricamento";
-    })
+    });
+});
