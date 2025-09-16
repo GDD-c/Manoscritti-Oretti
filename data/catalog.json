@@ -1,74 +1,151 @@
-[
-  {
-    "id": "b104",
-    "titolo": "Manoscritto B.104",
-    "tipo": "manoscritto",
-    "descrizione": "Descrive opere conservate nelle collezioni nobiliari a Bologna, con note autografe di Marcello Oretti.",
-    "link": "item-b104",
-    "immagine": "images/b104.jpg"
-  },
-  {
-    "id": "b109",
-    "titolo": "Manoscritto B.109",
-    "tipo": "manoscritto",
-    "descrizione": "Descrive opere conservate nelle collezioni cittadine a Bologna, con note autografe di Marcello Oretti.",
-    "link": "item-b109",
-    "immagine": "images/b109.jpg"
-  },
+{
+  "items": [
     {
-    "id": "b110",
-    "titolo": "Manoscritto B110",
-    "tipo": "manoscritto",
-    "descrizione": "Descrive opere conservate nelle collezioni nobiliari nel contado bolognese, con note autografe di Oretti.",
-    "link": "item-b110",
-    "immagine": "images/b110.jpg"
-  },
-  {
-    "id": "pepoli",
-    "titolo": "Palazzo Pepoli",
-    "tipo": "luoghi",
-    "descrizione": "BOLOGNA, XIV - XIX. Storico palazzo sito in Via Castiglione, vi era conservata una vasta collezione d’arte. Oggi sede museale.",
-    "link": "item-pepoli",
-    "immagine": "images/pepoli.jpg"
-  },
-  {
-    "id": "zambeccari",
-    "titolo": "Palazzo Zambeccari",
-    "tipo": "luoghi",
-    "descrizione": "BOLOGNA, XVI - XVIII. Storico palazzo sito in Via Barberia, vi era conservata una vasta collezione d’arte.",
-    "link": "item-zambeccari",
-    "immagine": "images/zambeccari.jpg"
-  },
-  {
-    "id": "guercino",
-    "titolo": "Guercino",
-    "tipo": "autori",
-    "descrizione": "Giovanni Francesco Barbieri, detto il Guercino (Cento, 2 febbraio 1591 – Bologna, 22 dicembre 1666)",
-    "link": "item-guercino",
-    "immagine": "images/guercino.jpg"
-  },
+      "id": "b104",
+      "title": "Manoscritto B104",
+      "type": "manoscritto",
+      "link": "item-b104.html",
+      "image": "images/b104.jpg",
+      "descr": "Indice delle pitture nei palazzi nobili di Bologna"
+    },
     {
-    "id": "carracci",
-    "titolo": "Annibale Carracci",
-    "tipo": "autori",
-    "descrizione": "Annibale Carracci (Bologna, 3 novembre 1560 – Roma, 15 luglio 1609)",
-    "link": "item-carracci",
-    "immagine": "images/carracci.jpg"
-  },
-      {
-    "id": "cignani",
-    "titolo": "Carlo Cignani",
-    "tipo": "autori",
-    "descrizione": "Carlo Cignani (Bologna, 15 maggio 1628 – Forlì, 6 settembre 1719)",
-    "link": "item-cignani",
-    "immagine": "images/cignani.jpg"
-  },
-  {
-    "id": "madonna",
-    "titolo": "Madonna con Bambino",
-    "tipo": "opere",
-    "descrizione": "Opera attribuita a Pellegrino Tibaldi, conservata nella collezione Pepoli.",
-    "link": "item-opera-002",
-    "immagine": "images/opera-002.jpg"
-  }
-]
+      "id": "b109",
+      "title": "Manoscritto B109",
+      "type": "manoscritto",
+      "link": "item-b109.html",
+      "image": "images/b109.jpg",
+      "descr": "Inventario delle collezioni private bolognesi"
+    },
+    {
+      "id": "b110",
+      "title": "Manoscritto B110",
+      "type": "manoscritto",
+      "link": "item-b110.html",
+      "image": "images/b110.jpg",
+      "descr": "Descrizioni delle opere nelle ville e palazzi suburbani"
+    },
+
+    {
+      "id": "albani",
+      "title": "Francesco Albani",
+      "type": "autori",
+      "link": "item-albani.html",
+      "image": "images/albani.jpg",
+      "descr": "Pittore barocco bolognese"
+    },
+    {
+      "id": "carracci",
+      "title": "Annibale Carracci",
+      "type": "autori",
+      "link": "item-carracci.html",
+      "image": "images/carracci.jpg",
+      "descr": "Fondatore dell'Accademia degli Incamminati"
+    },
+    {
+      "id": "cignani",
+      "title": "Carlo Cignani",
+      "type": "autori",
+      "link": "item-cignani.html",
+      "image": "images/cignani.jpg",
+      "descr": "Pittore tardo barocco bolognese"
+    },
+    {
+      "id": "guercino",
+      "title": "Guercino",
+      "type": "autori",
+      "link": "item-guercino.html",
+      "image": "images/guercino.jpg",
+      "descr": "Giovan Francesco Barbieri detto il Guercino, grande maestro barocco"
+    },
+    {
+      "id": "reni",
+      "title": "Guido Reni",
+      "type": "autori",
+      "link": "item-reni.html",
+      "image": "images/reni.jpg",
+      "descr": "Pittore bolognese del Seicento, celebre per il classicismo"
+    },
+    {
+      "id": "tibaldi",
+      "title": "Pellegrino Tibaldi",
+      "type": "autori",
+      "link": "item-tibaldi.html",
+      "image": "images/tibaldi.jpg",
+      "descr": "Architetto e pittore manierista"
+    },
+
+    {
+      "id": "opera-albani",
+      "title": "Ballo di puttini con Venere",
+      "type": "opere",
+      "link": "item-opera-albani.html",
+      "image": "images/opera-ballodiputtini.png",
+      "descr": "Francesco Albani, olio su rame, Pinacoteca di Brera"
+    },
+    {
+      "id": "opera-carracci",
+      "title": "Ritratto di mons. Girolamo Agucchi",
+      "type": "opere",
+      "link": "item-opera-carracci.html",
+      "image": "images/opera-ritrattoagucchi.jpg",
+      "descr": "Annibale Carracci, olio su tela, Palazzo Agucchi"
+    },
+    {
+      "id": "opera-cignani",
+      "title": "Sansone e Dalila",
+      "type": "opere",
+      "link": "item-opera-cignani.html",
+      "image": "images/opera-sansone.jpg",
+      "descr": "Carlo Cignani, olio su tela, Pinacoteca Nazionale di Bologna"
+    },
+    {
+      "id": "opera-guercino",
+      "title": "Santa Maria Maddalena",
+      "type": "opere",
+      "link": "item-opera-guercino.html",
+      "image": "images/opera-maddalena.jpg",
+      "descr": "Guercino, olio su tela, Pinacoteca Nazionale di Bologna"
+    },
+    {
+      "id": "opera-reni",
+      "title": "Flagellazione di Cristo",
+      "type": "opere",
+      "link": "item-opera-reni.html",
+      "image": "images/opera-flagellazione.jpg",
+      "descr": "Guido Reni, olio su tela"
+    },
+    {
+      "id": "opera-tibaldi",
+      "title": "Madonna con Bambino",
+      "type": "opere",
+      "link": "item-opera-tibaldi.html",
+      "image": "images/opera-madonna-tibaldi.jpg",
+      "descr": "Pellegrino Tibaldi, olio su tela"
+    },
+
+    {
+      "id": "luogo-bologna",
+      "title": "Bologna (centro)",
+      "type": "luogo",
+      "link": "map.html",
+      "image": "images/bologna.jpg",
+      "descr": "Luogo generale delle collezioni"
+    },
+    {
+      "id": "luogo-pepoli",
+      "title": "Palazzo Pepoli",
+      "type": "luogo",
+      "link": "map.html",
+      "image": "images/pepoli.jpg",
+      "descr": "Storica sede museale"
+    },
+    {
+      "id": "luogo-zambeccari",
+      "title": "Palazzo Zambeccari",
+      "type": "luogo",
+      "link": "map.html",
+      "image": "images/zambeccari.jpg",
+      "descr": "Residenza e collezione Zambeccari"
+    }
+  ]
+}
