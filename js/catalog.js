@@ -128,5 +128,4 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(err);
       grid.innerHTML = `<p class="text-danger">Errore nel caricamento del catalogo.</p>`;
       resultCount.textContent = "Errore di caricamento";
-    });
-});
+    })
