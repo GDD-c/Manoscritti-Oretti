@@ -125,11 +125,11 @@
 
     {
       "id": "luogo-bologna",
-      "title": "Bologna (centro)",
+      "title": "Biblioteca dell'Archiginnasio",
       "type": "luogo",
       "link": "map.html",
       "image": "images/bologna.jpg",
-      "descr": "Luogo generale delle collezioni"
+      "descr": "Luogo di conservazione dei manoscritti"
     },
     {
       "id": "luogo-pepoli",
