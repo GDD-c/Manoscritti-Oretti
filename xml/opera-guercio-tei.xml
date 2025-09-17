@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Santa Maria Maddalena</title>
+        <author>Barbieri, Giovan Francesco (detto il Guercino)</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Università di Bologna</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Bologna</settlement>
+            <repository>Pinacoteca Nazionale</repository>
+            <idno>Inv. 832</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Olio su tela, cm 177×233,5, datato 1652–1655, proveniente dalla collezione Zambeccari.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Dipinto di forte intensità devozionale, raffigurante la Maddalena penitente. Importante esempio della maturità del Guercino.</p>
+    </body>
+  </text>
+</TEI>
