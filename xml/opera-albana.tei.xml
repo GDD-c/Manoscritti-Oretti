@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ballo di puttini</title>
+        <author>Albani, Francesco</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Università di Bologna</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Milano</settlement>
+            <repository>Pinacoteca di Brera</repository>
+            <idno>Inv. 301</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Olio su rame, cm 90×114, datato 1623–1625.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Opera mitologica raffigurante un festoso ballo di putti, con Venere in cielo. Esempio dello stile elegante e narrativo di Albani.</p>
+    </body>
+  </text>
+</TEI>
