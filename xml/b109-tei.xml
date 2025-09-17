@@ -1,1 +1,30 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Manoscritto B.109</title>
+        <author>Marcello Oretti</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Biblioteca Comunale dell’Archiginnasio, Bologna</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Biblioteca Comunale dell’Archiginnasio</repository>
+            <idno>B.109</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Manoscritto cartaceo, indice delle collezioni cittadine, 250 carte.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Inventario delle collezioni d’arte di Bologna, con osservazioni sugli artisti e sulle opere.</p>
+    </body>
+  </text>
+</TEI>
