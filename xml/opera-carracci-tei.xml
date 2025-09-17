@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ritratto di mons. Girolamo Agucchi</title>
+        <author>Carracci, Annibale</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Università di Bologna</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Bologna</settlement>
+            <repository>Palazzo Agucchi</repository>
+          </msIdentifier>
+          <physDesc>
+            <p>Olio su tela, ca. 1603–1604.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Ritratto di Mons. Girolamo Agucchi, considerato un capolavoro della ritrattistica carraccesca per la sua sobrietà ed espressività psicologica.</p>
+    </body>
+  </text>
+</TEI>
