@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Sansone e Dalila</title>
+        <author>Cignani, Carlo</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Università di Bologna</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Bologna</settlement>
+            <repository>Pinacoteca Nazionale – Palazzo Pepoli</repository>
+            <idno>Inv. 434</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Olio su tela, cm 131×113, datato 1675–1680.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>L'opera rappresenta l’episodio biblico di Sansone e Dalila, trattato con intensità drammatica e finezza cromatica.</p>
+    </body>
+  </text>
+</TEI>
