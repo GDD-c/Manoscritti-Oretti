@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Manoscritto B.104</title>
+        <author>Marcello Oretti</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Biblioteca Comunale dell’Archiginnasio, Bologna</publisher>
+        <availability status="restricted">
+          <p>Consultabile in biblioteca, riproduzione digitale parziale disponibile.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Biblioteca Comunale dell’Archiginnasio</repository>
+            <idno>B.104</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Manoscritto cartaceo, 300 carte circa, con annotazioni a inchiostro.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Indice di collezioni e opere d’arte presenti a Bologna nella metà del XVIII secolo.</p>
+    </body>
+  </text>
+</TEI>
