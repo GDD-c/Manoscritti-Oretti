@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Manoscritto B.110</title>
+        <author>Marcello Oretti</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Biblioteca Comunale dell’Archiginnasio, Bologna</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Biblioteca Comunale dell’Archiginnasio</repository>
+            <idno>B.110</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Manoscritto cartaceo, 200 carte circa, con osservazioni critiche sullo stato di conservazione delle opere.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Repertorio delle opere presenti nelle ville e nei palazzi suburbani bolognesi nel XVIII secolo, con annotazioni sullo stato conservativo.</p>
+    </body>
+  </text>
+</TEI>
