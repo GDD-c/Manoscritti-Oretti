@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>Autore: Francesco Albani</title>
+  <title>Opera: Ballo di puttini – Francesco Albani</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -18,76 +18,104 @@
   <link href="css/typography.css" rel="stylesheet"/>
   <link href="css/style-breadcrumb.css" rel="stylesheet"/>
 
-  <!-- Metadati -->
-  <meta content="Francesco Albani" name="DC.title"/>
-  <meta content="1578–1660" name="DC.date"/>
-  <meta content="Pittura barocca, Bologna" name="DC.subject"/>
-  <meta content="Biografia e opere di Francesco Albani, citato nei manoscritti di Oretti." name="DC.description"/>
+  <!-- Metadati Dublin Core -->
+  <meta content="Ballo di puttini – Francesco Albani" name="DC.title"/>
+  <meta content="Francesco Albani" name="DC.creator"/>
+  <meta content="Olio su rame, Milano, Pinacoteca di Brera" name="DC.subject"/>
+  <meta content="Opera pittorica di Francesco Albani, datata 1623–1625, citata nei manoscritti Oretti." name="DC.description"/>
+  <meta content="1623-1625" name="DC.date"/>
+  <meta content="it" name="DC.language"/>
+  <meta content="Image" name="DC.type"/>
+  <meta content="text/html" name="DC.format"/>
 </head>
 <body>
+
+  <!-- Header -->
   <header class="py-4 bg-white border-bottom">
     <div class="container">
       <nav class="breadcrumb mb-3">
-        <a href="index.html">Home</a> › <a href="autori.html">Autori</a> › Albani
+        <a href="index.html">Home</a> › 
+        <a href="catalog.html">Catalogo</a> › 
+        Opera: Ballo di puttini
       </nav>
-      <h1 class="display-6">Francesco Albani</h1>
+      <h1 class="display-6">Ballo di puttini</h1>
     </div>
   </header>
 
-  <main class="container py-5" itemscope itemtype="https://schema.org/Person">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Oretti Manoscritti</a>
+      <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Catalogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="autori.html">Autori</a></li>
+          <li class="nav-item"><a class="nav-link" href="item-manoscritti.html">Manoscritti</a></li>
+          <li class="nav-item"><a class="nav-link" href="map.html">Mappa</a></li>
+          <li class="nav-item"><a class="nav-link" href="browse.html">Ricerca</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenuto -->
+  <main class="container py-5" itemscope itemtype="https://schema.org/CreativeWork">
     <div class="row">
+      <!-- Colonna principale -->
       <div class="col-lg-8">
-        <img alt="Francesco Albani" class="img-fluid my-3" src="images/albani.jpg"/>
-        <p>Bologna, 17 agosto 1578 – Bologna, 4 ottobre 1660</p>
-        <p>Francesco Albani è stato un pittore italiano. Assieme ai Carracci, Guido Reni, Giovanni Lanfranco, Domenichino e il Guercino, rappresenta uno dei maggiori pittori barocchi della scuola emiliana.</p>
-        <p>
-          Allievo dei Carracci, Francesco Albani fu autore di opere dal gusto classico e poetico, spesso ispirate a soggetti mitologici e religiosi.
-          Molto citato nei manoscritti di Oretti per la presenza delle sue opere in palazzi nobiliari e case bolognesi.
+        <img alt="Ballo di puttini – Francesco Albani" class="img-fluid my-3" src="images/opera-ballodiputtini.jpg"/>
+        
+        <p><strong>Autore:</strong> <a href="item-albani.html">Francesco Albani</a></p>
+        <p><strong>Titolo:</strong> Ballo di puttini, e vi è Venere sul Cielo, in Paese</p>
+        <p><strong>Data:</strong> 1623–1625</p>
+        <p><strong>Tecnica:</strong> Olio su rame</p>
+        <p><strong>Dimensioni:</strong> cm 90 × 114</p>
+        <p><strong>Collocazione attuale:</strong> Milano, Pinacoteca di Brera</p>
+        <p><strong>Inventario:</strong> inv. 301</p>
+
+        <p itemprop="description">
+          L’opera raffigura un festoso ballo di putti in un paesaggio idilliaco, con la figura di Venere che osserva la scena dal cielo. 
+          Rappresenta uno dei più celebri esempi dello stile elegante e narrativo di Albani, noto per le scene mitologiche e pastorali.
         </p>
 
-        <!-- Accordion -->
-        <div class="accordion mt-4" id="accordionAlbani">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" data-bs-target="#collapseOpereAlbani" data-bs-toggle="collapse">Opere citate</button>
-            </h2>
-            <div class="accordion-collapse collapse show" id="collapseOpereAlbani">
-              <div class="accordion-body">
-                <ul>
-                  <li><a href="item-opera-005.html">Madonna con Bambino e angeli</a></li>
-                  <li><a href="item-opera-006.html">Scene mitologiche (attribuite)</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" data-bs-target="#collapseFontiAlbani" data-bs-toggle="collapse">Fonti</button>
-            </h2>
-            <div class="accordion-collapse collapse" id="collapseFontiAlbani">
-              <div class="accordion-body">
-                <ul>
-                  <li><a href="https://www.treccani.it/enciclopedia/francesco-albani/" target="_blank">Voce Treccani</a></li>
-                  <li><a href="https://viaf.org/viaf/68927684/" target="_blank">Albani su VIAF</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h5 class="mt-4">Fonti e riferimenti</h5>
+        <ul>
+          <li><a href="https://pinacotecabrera.org/" target="_blank">Pinacoteca di Brera – Milano</a></li>
+          <li><a href="https://www.treccani.it/enciclopedia/francesco-albani_(Dizionario-Biografico)/" target="_blank">Francesco Albani su Dizionario Biografico Treccani</a></li>
+        </ul>
       </div>
 
       <!-- Aside -->
       <aside class="col-lg-4">
         <div class="bg-light p-4 rounded">
-          <h4>Autori correlati</h4>
-          <ul>
-            <li><a href="item-carracci.html">Carracci</a></li>
-            <li><a href="item-cignani.html">Carlo Cignani</a></li>
-            <li><a href="item-tibaldi.html">Pellegrino Tibaldi</a></li>
+          <h4>Opere correlate</h4>
+          <ul class="list-unstyled">
+            <li><a href="item-opera-reni">Guido Reni, Flagellazione di Cristo</a></li>
+            <li><a href="item-opera-carracci.html">Annibale Carracci, Ritratto di mons. Agucchi</a></li>
           </ul>
         </div>
       </aside>
     </div>
-  </main>
+  
+<p class="mt-4"><a href="xml/opera-albani-tei.xml" target="_blank">Scarica XML/TEI</a></p>
+</main>
+
+  <!-- Footer -->
+  <div class="container mt-4">
+    <a class="btn btn-outline-dark" href="catalog.html">← Torna al Catalogo</a>
+  </div>
+
+  <footer class="py-4 text-center border-top">
+    <div class="container">
+      <p class="mb-0 small">© 2025 - Collezioni d’Arte a Bologna nel XVIII secolo</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
