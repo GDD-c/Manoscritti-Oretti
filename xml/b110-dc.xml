@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+           xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <dc:title>Manoscritto B.110 – Marcello Oretti</dc:title>
+  <dc:creator>Oretti, Marcello</dc:creator>
+  <dc:subject>Arte suburbana, Bologna, XVIII secolo</dc:subject>
+  <dc:description>Descrizione delle opere presenti nelle collezioni nobiliari delle ville suburbane bolognesi.</dc:description>
+  <dc:publisher>Biblioteca Comunale dell’Archiginnasio</dc:publisher>
+  <dc:date>1765-1775</dc:date>
+  <dc:type>Text</dc:type>
+  <dc:format>application/xml</dc:format>
+  <dc:language>it</dc:language>
+  <dc:identifier>https://gdd-c.github.io/Manoscritti-Oretti/item-b110.html</dc:identifier>
+</oai_dc:dc>
