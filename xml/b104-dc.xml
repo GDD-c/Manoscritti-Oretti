@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+           xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/
+           http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <dc:title>Manoscritto B.104 – Marcello Oretti</dc:title>
+  <dc:creator>Oretti, Marcello</dc:creator>
+  <dc:subject>Collezioni d'arte a Bologna, XVIII secolo</dc:subject>
+  <dc:description>Raccolta di notizie su artisti e opere d’arte nelle collezioni nobiliari bolognesi.</dc:description>
+  <dc:publisher>Biblioteca Comunale dell’Archiginnasio</dc:publisher>
+  <dc:date>1750-1760</dc:date>
+  <dc:type>Text</dc:type>
+  <dc:format>application/xml</dc:format>
+  <dc:language>it</dc:language>
+  <dc:identifier>https://gdd-c.github.io/Manoscritti-Oretti/item-b104.html</dc:identifier>
+</oai_dc:dc>
