@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Flagellazione di Cristo</title>
+        <author>Reni, Guido</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Università di Bologna</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Bologna</settlement>
+            <repository>Pinacoteca Nazionale</repository>
+            <idno>Inv. 5377</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Olio su tela, cm 278,5×180,5, datato 1640–1642.</p>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Opera dell'ultimo periodo di Guido Reni, caratterizzata da toni spenti e figure sempre più eteree. Cristo è rappresentato in atteggiamento di rassegnazione, in contrasto con la fisicità degli aguzzini.</p>
+    </body>
+  </text>
+</TEI>
